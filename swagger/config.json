@@ -1,0 +1,34 @@
+{
+    "swagger": "2.0",
+    "definition": {
+      "openapi": "3.1.0",
+      "info": {
+        "swagger": "2.0",
+        "title": "Movie Lobby Swagger API",
+        "version": "0.1.0",
+        "description":
+          "Movie lobby api made with Express with Typescript and documented with Swagger"
+      },
+      "components": {
+        "securitySchemes": {
+          "bearerAuth": {
+            "type": "http",
+            "in": "header",
+            "name": "Authorization",
+            "description": "Bearer Token",
+            "scheme": "bearer",
+            "bearerFormat": "JWT"
+          }
+        }
+      },
+      "security": {
+        "bearerAuth": []
+      },
+      "servers": [
+        {
+          "url": "http://localhost:3000/api"
+        }
+      ]
+    },
+    "apis": ["**/*.ts"]
+  }
