@@ -52,7 +52,11 @@ Production build
   npm run build
 ```
 
+Now you can access the apis at
+http://localhost:3000/api/*
 
+Please refer swagger doucment for the api details
+http://localhost:3000/api-docs
 ## Note
 
 If you want to skip installing mongodb locally or would like to use existing mongodb connection, please create a .env file and the url in the .env file in below format.
